@@ -1,0 +1,1672 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17">
+        <owl:imports rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/aiiso/schema#description"/>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#name -->
+
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#name">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/surname -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/surname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#teaches -->
+
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#teaches">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAnswer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAnswer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfQuestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasQuestion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfItem">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfProgramme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfProgramme">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfQuestion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfQuestion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isCorrect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isCorrect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Answer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Course -->
+
+    <rdf:Description rdf:about="http://purl.org/vocab/aiiso/schema#Course">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Answer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Answer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Question -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Question">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAnswer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Answer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#teaches"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#course1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#course1">
+        <hasLiterature rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#literature1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#literature1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#literature1">
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#course1"/>
+        <schema:name>Literatura 1</schema:name>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#teacher1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#teacher1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#course1"/>
+        <foaf:surname>Profic</foaf:surname>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#AnđelićBranislav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#AnđelićBranislav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saradnik u nastavi</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anđelić  Branislav</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#AnđelićStefan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#AnđelićStefan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anđelić  Stefan</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ColićStefan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ColićStefan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colić  Stefan</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#IvkovićVladimir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#IvkovićVladimir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0014"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivković  Vladimir</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#JankovićEva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#JankovićEva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saradnik u nastavi</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Janković  Eva</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KovačevićDrAleksandar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KovačevićDrAleksandar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vanredni profesor</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kovačević dr Aleksandar</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MarićDrPetar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MarićDrPetar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0014"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docent</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marić dr Petar</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MarkovićDrMarko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MarkovićDrMarko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docent</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marković dr Marko</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MijatovVanja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MijatovVanja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mijatov  Vanja</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MilosavljevićDrBranko -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#MilosavljevićDrBranko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Redovni profesor</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milosavljević dr Branko</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NešićTomaševićDrAna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NešićTomaševićDrAna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docent</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nešić Tomašević dr Ana</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićDrSiniša -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićDrSiniša">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docent</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikolić dr Siniša</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićDušan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićDušan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikolić  Dušan</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićLazar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#NikolićLazar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nikolić  Lazar</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#PejićDrSonja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#PejićDrSonja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docent</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pejić dr Sonja</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Sociologija -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Sociologija">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ekonomski fakultet, Beograd</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Školska knjiga, Zagreb</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003</untitled-ontology-15:hasYear>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entoni Gidens</hasAuthor>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Majkl, Haralambos</hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociologija</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SociologijaNauke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SociologijaNauke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stilos, Novi Sad</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1995</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radivojević, R.</hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociologija nauke</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TehnikaIDruštvo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TehnikaIDruštvo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fakultet tehničkih nauka, Novi Sad</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radivojević, R.</hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tehnika i društvo</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TheSocialDynamicsOfInformationAndCommunicationTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TheSocialDynamicsOfInformationAndCommunicationTechnology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ashgate</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eugene Loos, Enid Mante-Meijer, Leslie Haddon</hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Social Dynamics of Information and Communication Technology</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TheSocialShapingOfTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TheSocialShapingOfTechnology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Univer. Pres.</untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1985</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> D.  Mackenzie, J. Wajeman </hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Social Shaping of Technology</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domain1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domain1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ks1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ks1">
+        <hasLink rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1">
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ŠarenacBalša -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ŠarenacBalša">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <assists rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asistent-master</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Šarenac  Balša</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tehničko saznanje: osobine ii društvene funkcije  tehnike, izvori tehničkog saznanja,  stvaraoci  tehničkog saznanja, širenje tehničkog saznanja, naučno-tehnički potencijal, odnos nauke i tehnike.Odnos tehnike i društva: uticaj  društva na razvoj tehnike i uticaj tehnike na razvoj društva-Industrijsko i informatičko društvo. Uticaj tehnike na život, svest i kulturu.Tehnika i globalizacija: uzroci i dimenzije globalizacije,  tehnološki jaz, beg mozgova; Tehnika i organizacija rada:  fleksibilna proizvodnja, umrežene organizacije, ekonomija znanja, elektronska ekonomija.Tehnika i rad: skraćenje radnog vremena, promena sadržaja rada,   opadanje značaja rada.Tehnika i otuđenje u radu: uticaj tehnike na otuđenje u radu,  oblici otuđenja, humanizacija rada Masovni mediji i komunikacije: globalna televizija, uticaj televizije na društvo, teorije o medijima, mobilna telefonija i internet,  uticaj interneta na društvo,  medijski imperijalizam, masovna kultura, sajber kriminal.Tehnika i obrazovanje: obrazovanje i nove komunikacijske tehnologije, obrazovanje i tehnološki jaz, virtuelni univerziteti, inteligencija i obrazovni uspeh.Tehnika i demokratija: globalni mediji i širenje liberalne demokratije, mediji i virtuelna stvarnost, otpor i alternative globalnim medijima.  Tehnika i ekološka kriza: globalno zagrevanje, genetski modifikovana hrana, tehnički rizici, tehničko društvo kao rizično  Tehnička inteligencija : društveni položaj i uticaj, inženjerska etika.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljenost inženjera da shvate društveni značaj i ulogu tehnike u razvoju društva, pozitine i negativne uticaje tehnike na razvoj društva i čoveka, kao i vlastiti  društveni značaj i odgovornost u stvaranju humanog društva.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - E106</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sticanje socioloških saznanja o osobinama, izvorima, društvenim funkcijama i stvaraocima tehničkog sazananja; znanja o uticaju prirode društvenih sistema na razvoj tehnike i uticaju tehnike na razvoj društva; znanja o uticaju tehnike na procese globalizacije, na uništavanje prirode i stvaranje rizičnog društva; znanja o uticaju tehnike na promene sadržaja rada i oblika organizacije rada; znanja o uticaju sredstava masovnih komunikacija na život ljudi, obrazovanje, kulturu i demokratiju.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociologija</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na predavanjima se izlaže problem, a zatim se otvara rasprava u kojoj studenti mogu da postavljaju pitanja, da daju primedbe i dopune izloženo gradivo.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 10.10.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociologija tehnike</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E212S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E212S">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja: Polje realnih i kompleksnih brojeva. Metrički prostori. Nizovi (konvergencija niza, realni i kompleksni nizovi, kompletni metrički prostori). Brojni redovi. Granična vrednost, neprekidnost i uniformna neprekidnost funkcija. Realne funkcije jedne realne promenljive (granična vrednost, neprekidnost, uniformna neprekidnost, diferencijalni račun i primena, neodređeni integral, određeni integral i primena, nesvojstveni integral). Realne funkcije više realnih promenljivih (granična vrednost, neprekidnost, uniformna neprekidnost, diferencijalni račun i primena). Obične diferencijalne jednačine prvog i višeg reda. Linearne diferencijalne jednačine n-tog reda.  Vežbe: Na vežbama se rade odgovarajući primeri sa teorijske nastave kojim se uvežbava gradivo, a samim tim vežbe doprinose  i razumevanju gradiva.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cilj predmeta je sticanje osnovnih znanja iz oblasti matematičke analize neophodnih za dalje izučavanje bliskih predmeta i osposobljavanje studenata za apstraktno mišljenje. Stečena znanja iz matematičke analize student treba da primeni u modelovanju realnih problema iz oblasti tehničkih nauka.    
+</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - E212S</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student treba da nauči osnovne pojmove matematičke analize - nizove, granične procese, diferencijalni i integralni račun, obične diferencijalne jednačine i numerički redove i da ume da ih primenjuje. Stečena znanja koristi u daljem obrazovanju i u stručnim  predmetima. Student je osposobljen da pravi i rešava matematičke modele  iz stručnih predmeta koristeći  gradivo iz matematičke analize.
+</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijska i primenjena matematika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja, numeričko računske vežbe. Konsultacije. Predavanja se izvode kombinovano. Na predavanjima se izlaže teoretski deo gradiva propraćen karakterističnim primerima radi lakšeg razumevanja gradiva. Na vežbama, koja prate predavanja, rade se karakteristični zadaci i produbljuje se izloženo gradivo sa predavanja. Pored predavanja i vežbi redovno se održavaju i konsultacije.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Da</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2004..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matematička analiza</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E231">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matematički modeli i numerički modeli; metodologija rešavanja inženjerskih problema primenom numeričkih modela; oblasti primene numeričkih modela u inženjerstvu. Osnovni numerički postupci: numeričko rešavanje sistema linearnih algebarskih jednačina (direktni i iterativni postupci); numeričko rešavanje nelinearnih jednačina i sistema; aproksimacija funkcija (interpolacija i najbolja aproksimacija); diferenciranje i integracija (konačne razlike, Njutn-Kotesove formule, Rombergov metod); obične diferencijalne jednačine - početni uslov (jednokoračne i višekoračne formule, prediktor-korektor postupci), granični uslov (metoda pogađanja, kolokacione formule); Monte-Karlo metode. Numerički softverski alati: zahtevi i funkcije, arhitektura, načini korišćenja, raspoloživi alati.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim znanjima iz numeričke analize, ovladavanje metodoologijom primene numeričkih modela u inženjerskim disciplinama, ovladavanje korišćenjem odabranog standardnog numeričkog softverskog alata.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - E231</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Razumevanje osnovnih numeričkih metoda i sposobnost njihove primena u rešavanju jednostavnijih inženjerskih zadataka korišćenjem numeričkih softverskih alata.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oblici izvođenja nastave su: Predavanja, računarske vežbe, izrada domaćih zadataka, i konsultacije. Na predavanjima se, korišćenjem potrebnih didaktičkih sredstava, izlažu sadržaji predmeta i stimuliše se aktivno učešće studenata postavljanjem pitanja. Praktični deo gradiva studenti savladavaju na računarskim vežbama kroz obavezne zadatke koje rešavaju uz pomoć asistenta ili samostalno i kroz samostalnu izradu obaveznih i neobaveznih domaćih zadataka.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.09.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerički algoritmi i numerički softver</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E233 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E233">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standardi u mrežama i tela za standardizaciju. 
+Pasivna i aktivna oprema potrebna za realizaciju računarskih mreža, struktuirano kabliranje. TCP/IP mreže: ISO referentni model  i TCP/IP, prenos podataka (osnove protokola OSI 1), ethernet i serijske veze (osnove protokola OSI 2), IPv4, ICMPv4,  principi rutiranja, protokoli za dinamičko rutiranje, UDP, TCP, DNS, IPv6, ICMPv6,
+Komunikacioni uređaji: hab, svič, ruter. Mrežni servisi (SMTP). Evolucija kampus mreža, (VLAN, VPN). Nadgledanje, upravljanje, zaštita mreže: SNMP, paketsko filtriranje, kriptografija, zaštitne barijere, kontrolisani pristup, servisi imenovanja, autentifikacioni protokoli, digitalni potpisi. Bežične komunikacije i mobilno računarstvo: evolucija, kampatibilnost standarda, specifičnosti, bežični LAN-ovi i satelitski bazirane mreže, mobilni Internet protokol.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje teorijskim osnovama i tehnologijama TCP/IP mreža.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - E233</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim teorijskim znanjima o TCP/IP mrežama. Ovaladavanje praktičnim znanjima potrebnima za projektovanje, implementaciju i održavanje lokalnih računarskih mreža baziranih na TCP/IP modelu.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oblici izvođenja nastave su: Predavanja, laboratorijske vežbe, izrada domaćih zadataka, i konsultacije. Na predavanjima se, korišćenjem potrebnih didaktičkih sredstava, izlažu sadržaji predmeta i stimuliše se aktivno učešće studenata postavljanjem pitanja. Praktični deo gradiva studenti savladavaju na laboratorijskim vežbama kroz obavezne zadatke koje rešavaju uz pomoć asistenta ili samostalno i kroz samostalnu izradu obaveznih i neobaveznih domaćih zadataka. Student je obavezan da demonstrira samostalnost u rešavanju zadatka, odnosno da demonstrira razumevanje rešenja. Provera se vrši usmenom konverzacijom sa asistentom i rezultat se ocenjuje. Predmetni nastavnik i asistenti obavljaju konsultacije sa studentima. Na konsultacijama se studentima daju dodatna objašnjenja sadržaja izlaganih na predavanjima i vežbama i, u slučaju da je predmet konsultacija samostalna izrada laboratorijskih ili domaćih zadataka, sugestije kako da poboljšaju rešenje koje su obavezni da ponude.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.09.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet mreže</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E243 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E243">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCI razvoj i problemi. Razvoj interakcije orijentisan ka korisniku i uz njegovo aktivno učešće. Neophodna znanja iz kognitivne psihologije, poznate heuristike i MVC/MVP/MVVM arhitekture. Sakupljanje, interpretacija i analiza zahteva. Spoznavanje korisnika, zadatka i konteksta upotrebe. HCI notacije. Klase HCI prototipova i njihova evolucija u krajnje rešenje. Alati za razvoj interfejsa. Projektovanje i prostori: GUI, web, mobile, embedded, ubiquitous. Reprezentacija i vizuelizacija. Interakcioni uređaji. Utilitarnost interfejsa. Evaluacija utilitarnosti.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za projektovanje i implementaciju osnovnih nosilaca interakcije čovek računar.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - E243</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stečena znanja i veštine su osnova za razvoj softvera što je moguće veće utilitarnosti u narednim kursevima i profesionalnom životu.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja, računarske vežbe, konsultacije. Gradivo predmeta je organizovano u 2 celine koje se proveravaju u formi 2 testa tokom predavanja. Na vežbama se implementiraju interfejsi različite kompleksnosti i minimalne funkcionalnosti čiji se kvalitet vrednuje. Uspešno rešene vežbe su uslov za izlazak na ispit. Ispit se polaže u pismenoj formi. Osvojeni bodovi sa ispita, testova i obaveza sa vežbi se sabiraju formirajući konačnu ocenu.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.09.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interakcija čovek računar</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0001">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pojam računarskog programa: uloga hardvera i softvera u računarskom sistemu; principi rada modernog računara; oblik i svrha programskih jezika; karakteristike programskog jezika Python; elementi Python programa. Rukovanje brojevima: pojam tipova podataka; numerički tipovi podataka; reprezentacija brojeva u računaru; akumulatorske promenljive; korišćenje matematičkih funkcija. Rukovanje stringovima: pojam stringa i njegova računarska reprezentacija; operacije nad stringovima; formatiranje stringova. Grananje u programu: pojam grananja u programu; jednostruko, dvostruko i višestruko grananje; obrada izuzetaka. Petlje i logički izrazi: pojam petlje; konačna i beskonačna petlja; interaktivna i sentinel petlja; ugnježdene petlje; Bulova algebra i Bulovi izrazi. Potprogrami: dekompozicija programa; pozivanje potprograma; prenos parametara i rezultata; kolekcije potprograma; pojam i primena rekurzije. Kolekcije podataka: pojam niza; operacije nad nizovima; višedimenzionalni nizovi; pojam rečnika; operacije nad rečnikom. Razvoj programa: reprezentacija realnog sistema u računarskom programu; top-down i spiralne tehnike razvoja programa; testiranje programa. Analiza algoritama: osnovne za analizu efikasnosti algoritama; pojam pretraživanja, linearna i binarna pretraga; pojam i algoritmi sortiranja.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa osnovnim konceptima, elementima i strukturom računarskih programa, i osnovnim algoritmima za obradu podataka.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0001</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student poznaje koncepte računarskih programa i piše programe koji vrše interakciju sa korisnikom; rukuje različitim tipovima podataka u računarskom programu; koristi osnovne strukturne elemente programa: sekvence, selekcije i iteracije; koristi potprograme i vrši dekompoziciju složenijih programa; poznaje elemente procesa razvoja programa; poznaje elemente analize algoritama.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Završni ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa računarskih vežbi i završnog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 29.10.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnove programiranja</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0002">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja (teorijska nastava). Logika, relacije, funkcije, Bulova algebra, grupe, prsteni, polja, polinomi, kompleksni brojevi, konačna polja, slobodni vektori, analitička geometrija u prostoru (vektorski!), determinate, sistemi linearnih jednačina, vektorski prostori, matrice, karakteristični koreni i vektori.  Prakticna nastava (vežbe): Na vežbama se rade odgovarajuci primeri i testovi sa teorijske nastave kojim se uvežbava dato gradivo a samim tim vežbe doprinose i razumevanju datog gradiva.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">  Osposobljavanje studenata na apstraktno mišljenje i sticanje osnovnih znanja iz oblasti elementarne, opšte, apstraktne i linearne algebre, kao i iz osnova klasične kombinatorike. Cilj predmeta je da kod studenta razvije poseban nacin ramisljanja pri proučavanju  principa linearne algebra i njene primene. To znanje je temelj za bolje razumevanje stručne literature i za uspešan nastavak u studijama.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0002</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">     Stečena znanja koriste se u daljem obrazovanju i u strucnim predmetima, konstruišu se  i rešava matematički modeli iz strucnih predmeta koristeci gradivo ovoga predmeta. Na osnovu stečenih zananja studenti umeju da primene metode linearne algebre i da izaberu algoritme za rešavnje budućih problema iz stručnih predmeta.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijska i primenjena matematika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računske vežbe. Konsultacije. Predavanja se izvode dinamično i interaktivno. Na predavanjima se izlaže teoretski deo gradiva propraćen karakterističnim i reprezentativnim primerima radi lakšeg razumevanja gradiva. Na vežbama, koja prate predavanja, rade se karakteristični zadaci i produbljuje se izloženo gradivo sa predavanja. Pored predavanja i vežbi redovno se održavaju redovne konsultacije i grupne konsultacije. Deo gradiva, koji cini logičku celinu,može se polagati i u toku nastavnog procesa u obliku sledećih 2 modula (prvi modul: relacije, funkcije, Bulova algebra, grupe, prsteni, polja, polinomi,kompleksni brojevi, konačna polja, slobodni vektori, analitička geometrija u prostoru (vektorski!);drugi modul: determinate, sistemi linearnih jednačina, vektorski prostori, matrice,karakteristicči koreni i vektori. Teorijski deo se polaže kroz test (eliminacioni i osnovni), prakticni deo kroz pet ozbiljnih zadataka.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Da</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2004..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algebra</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0006">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovni pojmovi i termini. Objekti, klase, veze i metode. Enkapsulacija. Kreiranje objekata, konstruktori, Garbage Collection. Nasleđivanje. Apstraktne klase i interfejsi. Preklapanje metoda. Generički tip podatka. Izuzeci. Osnove Swing grafičkog korisničkog interfejsa.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za rešavanje problema iz oblasti objektno orijetnisanog programiranja.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0006</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje metoda, tehnologija i standarda za razvoj objektno orijentisanih aplikacija. Student je kompententan da projektuje objektno orijentisane aplikacije zasnovane na programskom jeziku Java.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja. Računarske vežbe. Konsultacije. Teorijski deo gradiva studenti polažu usmeno. Praktični deo gradiva studenti polažu u računarskoj laboratoriji. Ocena se formira na osnovu uspeha sa praktičnog dela i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 16.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objektno orijentisano programiranje 1</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0008">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apstraktni tipovi podataka: pojam apstraktnog tipa podataka; definisanje novih tipova. Nizovi: pojam niza; operacije nad nizovima; analiza efikasnosti operacija nad nizovima; pojam matrice; operacije nad matricama. Skupovi i mape: pojam skupa; implementacija skupa; pojam mape; implementacija mape; višedimenzionalni nizovi i operacije nad njima. Analiza algoritama: O-notacija; analiza funkcionisanja Python liste. Pretraživanje i sortiranje: linearna i binarna pretraga; algoritmi za sortiranje; operacije nad sortiranim nizovima. Lista, stek i red: jednostruko spregnute liste: pojam i operacije; primene listi; dvostruko spregnute liste; stek - pojam i operacije; red - pojam i operacije; implementacija steka i reda; višestruko spregnute liste. Rekurzija. pojam i osobine rekurzije; implementacija rekurzije; primene rekurzije. Heš tabele: pojam heš funkcije; heš tabele - pojam i operacije; primene heširanja. Stabla: binarna stabla - pojam i operacije; N-arna stabla; stabla za pretraživanje.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa strukturama podataka u operativnoj memoriji i razvojem programa koji ih koriste.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0008</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student poznaje koncepte apstraktnih tipova podataka; rukuje linearnim strukturama podataka – nizovima, skupovima, mapama, listama, stekovima, redovima; poznaje koncepte analize efikasnosti algoritama; koristi postupke za pretraživanje i sortiranje podataka; poznaje i koristi rekurziju u dizajnu programa; poznaje i koristi heš tabele; poznaje i koristi stabla.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 29.10.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algoritmi i strukture podataka</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0009">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klasični kombinatorni objekti (permutacije, varijacije i kombinacije sa i bez ponavljanja), particije skupova, Stirlingovi brojevi, rekurentne formule, generativne funkcije, osnovni pojmovi teorije grafova, povezanost grafova, specijalne klase grafova, izomorfizam grafova, matrice susedstva, operacije nad grafovima, stabla, planarni grafovi, Ojlerovi i Hamiltonovi grafovi.  </untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovni cilj predmeta jeste osposobljavanje studenata na apstraktno mišljenje i sticanje osnovnih znanja iz oblasti  klasičnih kombinatornih objekata, neklasičnih kombinatornih objekata i teorije grafova. Studenti će učiti da klasifikuju probleme iz kombinatorike, a zatim i da ih ih rešavaju koristeći poznate kombinatorne metode, kroz usvajanje teorijskih znanja i rešavanje praktičnih primera. Kroz učenja poznatih pojmova i tvrđenja iz teorije grafova, student će biti osposobljen da postavlja grafovske modele iz primena u drrugim disciplinama (npr. računarstvu i transportu). Osobine grafova biće precizno matematički dokazane, sa ciljem da student ovlada tehnikama dokazivanja.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0009</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kao ishod predmeta,  studenti će posedovati osnovna znanja iz oblasti  klasičnih kombinatornih objekata, neklasičnih kombinatornih objekata i teorije grafova, uz čega će njihova sposobnost apstraktnog razmišljenja i veština dokazivanja biti u velikoj meri unapređena. Studenti će biti sposobni da prepoznaju  kombinatorike objekte i da ih rešavaju poznatim metodama, kao i da postavlja grafovske modele iz primene.  </untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijska i primenjena matematika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja se izvode dinamično i interaktivno. Na predavanjima se izlaže teoretski deo gradiva propraćen karakterističnim i reprezentativnim primerima radi lakšeg razumevanja gradiva. Na vežbama, koja prate predavanja, rade se karakteristični zadaci i produbljuje se izloženo gradivo sa predavanja. Pored predavanja i vežbi redovno se održavaju redovne konsultacije i grupne konsultacije. </untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Da</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 15.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diskretna matematika</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE001">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovne definicije u verovatnoći, uslovna verovatnoća i Bejsova formula. Slučajna promenljiva neprekidnog i diskretnog tipa , funkcija raspodele. Dvodimenzionalna slučajna promenljiva. Brojne karakteristike - očekivanje, disperzija, kovarijansa, korelacija. Granične teoreme. Pojam populacije i statističkog uzorka, metode uzorkovanja . Deskriptivna statistika, tačkaste i intervalne ocene parametara. Parametarske i neparametarske hipoteze i testovi značajnosti, interpretacija statističkih zaključaka. Regresiona analiza: linerana, nelinearna i logistička regresija. Vizualizacija statističkih podataka, dijagrami. Statistički modeli u računarstvu. Ovladavanjem statističkim softverom.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata na apstraktno mišljenje i sticanje osnovnih znanja iz oblasti Verovatnoće i matematičke statistike. Cilj predmeta je da kod studenta razvije poseban način razmišljanja pri proučavanju masovnih pojava, posebno u oblasti informatike. Karakter predmeta je aplikativni, stoga se daje značaj znanjima koja mogu pojasniti kvantitativni pristup problemima iz oblasti studiranja. Uz to studenti se osposobljavaju za korišćenje statističkog programa. Cilj je osposobiti studente da znaju odabrati odgovarajuće statističke metode, izraditi statističku analizu i suštinski je obrazložiti.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE001</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stečena znanja student treba da koristi u daljem obrazovanju i u stručnim predmetima pravi i rešava matematičke modele koristeći se saznanjima stečenim u ovom predmetu. </untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijska i primenjena matematika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Numeričko računske vežbe. Konsultacije. Na predavanjima se izlaže teoretski deo gradiva propraćen karakterističnim primerima radi lakšeg razumevanja gradiva. Na vežbama, koja prate predavanja, rade se karakteristični zadaci i produbljuje se izloženo gradivo sa predavanja. Pored predavanja i vežbi redovno se održavaju i konsultacije. Deo gradiva, koji čini logičku celinu, može se polagati i u toku nastavnog procesa u obliku sledeća 2 modula (prvi modul: teorija verovatnoće drugi modul: statistika). Usmeni deo završnog ispita je obavezan.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Da</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2014..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistika</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0011">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijski deo: Procesi i metodologije razvoja softvera; Modeli životnog ciklusa softvera; Uporedna analiza tradicionalnog shvatanja procesa razvoja softvera i agilne metodologije. Inženjerstvo softvera kao profesija. Prelomne tačke u istoriji razvoja discipline softverskog inženjerstva. Korpus znanja u softverskom inženjerstvu (SWEBOK - Software Engineering Body of Knowledge). Etički kodeks inženjerstva softvera (Software Engineering Code of Etics).Softverski proizvod i proces njegove izrade.
+Pregled integrisanih okruženja za razvoj; prednosti u odnosu na klasične editore koda; efikasna upotreba integrisanih okruženja; navigacija nad izvornim kodom; definisanje dinamičkih šablona za kodiranje. Tehnike otkrivanja i uklanjanja grešaka; debagovanje. Sistemi za kontrolu verzija (Version Control System – VCS); arhitekture; alati; subversion – upotreba, upravljanje verzijama. 
+Osnovni pojmovi testiranje; razvoj softvera vođen testiranjem; jedinično testiranje; integraciono testiranje; test prihvatanja. 
+Razvoj softvera vođen ponašanjem; pisanje scenarija; pisanje testova prihvatanja. Pisanje dokumentacije; dokumentacija elemenata izvornog koda; tehnička dokumentacija; korisničko uputstvo; alati za pisanje i generisanje dokumentacije. Alati za upravljanje izgradnom i instalacijom. 
+Praktičan deo: instalacija, podešavanje i upotreba Eclipse integrisanog okruženja; podešavanje šablona za kodiranja elemenata izvornog koda; tehnička dokumentacija; korisničko uputstvo; alati za pisanje i generisanje dokumentacije. Alati za upravljanje izgradnom i instalacijom. Virtualna okruženja u Java-u. Praktičan deo: instalacija, podešavanje i upotreba Eclipse integrisanog okruženja; podešavanje šablona za kodiranje u Java-u; debagovanje Java programa. Instalacija, podešavanje i upotreba klijenata za subversion VCS; Subversive. Testiranje Java programa (JUnit, doctest).  </untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobiti studente za primenu savremenih metoda, alata i najbolje prakse u procesu inženjerskog razvoja softvera. Omogućiti jasnu diferencijaciju između programiranja i softverskog inženjerstva i uloge modela životnog ciklusa softvera u procesu inženjerstva softverskih proizvoda. 
+Osposobiti studente za izbor modela životnog ciklusa softvera koji najbolje odgovara prirodi domena problema i karakteristikama programskih proizvoda.
+Podići nivo svesti o ulozi zahteva, njihove specifikacije (modela zahteva) i opisa interakcije korisnika sa razvijanim softverskim proizvodom (funkcionalni model) na arhitekturu i principe razvoja interaktivnih programskih proizvoda.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0011</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student je u stanju da: koristi moderne tehnike i alate u razvoju softvera (integrisana okruženja, editore, kompajlere, debagere i dr.), uspešno sarađuje na razvoju softvera u okviru višečlanog tima, koristi alate za kolaboraciju, sisteme za kontrolu verzija i sisteme za praćenje zahteva za promenama, piše jedinične, integracione testove i testove prihvatanja, razume prednosti razvoja softvera upravljanog testiranjem, razume i koristi osnovne metodoške pristupe u razvoju softvera, piše dokumentaciju i koristi alate za pisanje dokumentacije za softver koji razvija.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Projekat. Kontinualno praćenje upotrebe sistema za kontrolu verzija, sistema za upravljanje projekta, okvira za testiranje i okvira za pisanje dokumentacije kroz projektni zadatak. U sklopu predmeta studenti podeljeni u timove od po dva člana (parovi) realizuju projekat interaktivne aplikacije koja omogučava vizualizaciju i razumevanje struktura podataka i osnovnih operacija nad strukturama podataka (algoritmi). Metodološki pristup zasniva se na izradi dokumenta vizije modela zahteva i funkcionalnog modela razvijanog softverskog proizvoda. Specifikacijom vođen razvoj omogućava kasniju verifikaciju i validaciju programskog proizvoda u odnosu na njegovu specifikaciju.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 29.10.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod u softversko inženjerstvo</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0013">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod u sisteme datoteka i sisteme relacionih i nerelacionih (NoSQL) baza podataka. Modeli podataka. Fizičke strukture podataka na eksternim memorijskim uređajima. Usluge operativnog sistema i sistemski pozivi. Metode pristupa. Metode i postupci organizacije datoteka. Serijska, sekvencijalna, rasuta, indeks-sekvencijalna i indeksna datoteka s B stablom.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovno obrazovanje studenata u oblasti organizacije podataka u sistemima datoteka i sistemima relacionih i nerelacionih (NoSQL) baza podataka. Ovladavanje modelima podataka i fizičkim strukturama podataka na eksternim memorijskim uređajima. Osposobljavanje studenata za razvoj i korišćenje sistema datoteka.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0013</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stečena znanja koriste se u praksi, predmetu Baze podataka i drugim stručnim predmetima. Nakon uspešno završenog kursa, student razume principe organizacije podataka u sistemu datoteka i sistema za upravljanje podacima.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nastava se izvodi u obliku predavanja, auditornih i računarskih vežbi (u računarskoj laboratoriji) i konsultacija. Tokom celokupnog procesa izvođenja nastave, studenti se podstiču na intenzivnu komunikaciju, kritičko rezonovanje, samostalni rad i aktivan odnos prema procesu nastave. Uslov za dobijanje potpisa i izlazak na završni ispit predstavlja izvršenje svih predispitnih obaveza, u minimalnom obimu od 30 poena.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 10.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organizacija podataka</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0014">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod u arhitekturu računara (osnovni pojmovi, kratka istorija i evolucija, računarske vrste); Organizacija računarskih sistema (procesori, primarna i sekundarna memorija, U/I); Digitalna logika (Bulova algrebra, osnovna logička kola, memorija, čipovi i magistrale sa primerima); Mikroarhitektura (načini implementacije sa primerima); Arhitektura skupa mašinskih instrukcija (tipovi podataka, formati instrukcija, adresiranje, tipovi instrukcija, kontrola toka, primeri); Operativni sistem računara (virtuelna memorija i U/I instrukcije, primeri operativnih sistema); Asemblerski jezik (osnovni pojmovi, makroi, proces asembliranja, linkovanje i učitavanje); Arhitekture paralelnih računara (paralelizam na čipu, koprocesori, multiprocesori, multikompjuteri sa razmenom poruka)</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa osnovnim pojmovima računarske arhitekture, principima rada, strukturnom organizacijom računara i načinima njegove implementacije.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0014</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje osnovnih delova računara, principa rada i nivoa organizacije, sposobnost procene efikasnosti upotrebe različitih računarskih implementacija u određene svrhe, sposobnost razlikovanja računarskih sistema na osnovu njihovih parametara, sposobnost praktične primene stečenih znanja.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 02.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arhitektura računara</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0016">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baze podataka i njihova uloga u razvoju i eksploataciji informacionih sistema. Osnovni pojmovi i koncepcija baze podataka. ER model podataka. Relacioni model podataka. Relaciona algebra. Tipovi ograničenja u relacionom modelu podataka. Osnove projektovanja baza podataka. Jezik relacionih sistema za upravljanje bazama podataka SQL. Transakciona obrada podataka. Sistem za upravljanje bazom podataka. Tehnike serverskog programiranja.  </untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovno obrazovanje studenata u oblasti baza podataka. Ovladavanje osnovnim pojmovima u oblasti baza podataka i osnovnim tehnikama implementacije, korišćenja i održavanja baza podataka.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0016</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stečena znanja koriste se u praksi i stručnim predmetima: Baze podataka 2, Specifikacija i modeliranje softvera, Inženjering informacionih sistema, Poslovna informatika, Sistemi baza podataka.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nastava se izvodi u obliku predavanja, auditornih i računarskih vežbi (u računarskoj laboratoriji) i konsultacija. Tokom celokupnog procesa izvođenja nastave, studenti se podstiču na intenzivnu komunikaciju, kritičko rezonovanje, samostalni rad i aktivan odnos prema procesu nastave. Uslov za dobijanje potpisa i izlazak na završni ispit predstavlja izvršenje svih predispitnih obaveza, u minimalnom obimu od 30 poena.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 27.10.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baze podataka</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0017">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Životni ciklus softverskog proizvoda; faze životnog ciklusa; značaj primene metodologija za razvoj softvera; istorijat razvoja metodologija; modeli razvoja softvera; modeli bazirani na vodopadu; iterativni i inkrementalni modeli; Bemov spiralni model; modeli bazirani na prototipovima; agilne metodologije (SCRUM, Scaled Agile Framework - SAF, ekstremno programiranje, Feature Driven Development - FDD , Dynamic Systems Development Method – DSDM, Kristal, Adaptivni razvoj softvera - ASD, Test Driven Development - TDD); automatizovan razvoj softvera; savremeni alati za planiranje, projektovanje, konstrukciju i dokumentovanje; alati za podršku timskog rada i praćenja napretka projekta.
+
+</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa životnim ciklusom softverskog proizvoda i različitim metodologijama, standardima i alatima koji podržavaju životni ciklus softverskog proizvoda u celini ili u nekoj od njegovih faza </untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0017</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student je upoznat sa različitim metodologijama za razvoj softvera, kao i standardima i alatima koji ih podržavaju. Po završetku kursa, student je sposoban da odabere i aktivno primeni optimalnu metodologiju i alate za konkretni softverski projekat, kao da obrazloži svoj izbor.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja,  računarske vežbe i konsultacije. Praktični deo projekta se radi timski, u okviru projekta koji treba da ilustruje korišćenje izabrane metodologije i alata. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha projekta i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.10.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metodologije razvoja softvera</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0031 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE0031">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod (osnovni pojmovi, kratka istorija i evolucija, struktura operativnog sistema); Procesi (model procesa, međuprocesna komunikacija, klasični problemi, raspoređivanje, primeri); Ulaz/izlaz (principi rada U/I hardvera i softvera, blok uređaji, diskovi, terminali, mreža); Upravljanje memorijom (principi upravljanja memorijom, virtuelna memorija, straničenje, segmentacija); Fajl sistemi (fajlovi i direktorijumi, njihova implementacija, bezbednost, mehanizmi zaštite, primeri); Vrste operativnih sistema sa primerima; Proučavanje dizajna operativnog sistema sa pojedinim detaljima implementacije, implementacija pojedinih delova operativnog sistema, uvod u administraciju</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa pojmom operativnog sistema, njegovim osnovnim delovima i strukturom, principima rada, kao i načinima za njegovu implementaciju.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE0031</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje osnovnih delova operativnog sistema, njegovog principa rada i strukture,
+poznavanje različitih vrsta operativnih sistema i njihovih osobina,
+razumevanje značenja osnovnih parametara operativnog sistema,
+sposobnost praktične primene stečenih znanja.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 21.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operativni sistemi</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE1006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE1006">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod: osnovne karakteristike jezika, evolucija jezika. Organizacija programa: zaglavlja i biblioteke. Struktura Ce++ programa: globalne funkcije, funkcija main(), klase, šabloni (funkcija i klasa). Automatski generisane funkcije članice: konstruktori i operatori dodele. Tokovi podataka: ulaz i izlaz, datoteke, prilagođavanje tokova. Kategorije izraza: rvalue, lvalue, xvalue, glvalue, prvalue. Prenošenje vrednosti (parametri potprograma i povratna vrednost): po vrednosti, po pokazivaču, po lvalue referenci, po rvalue referenci. Greške u programu: reakcija programa na pojavu greške, pojava izuzetka, obrada izuzetaka, klase izuzetaka iz standardne biblioteke. Elementi standardne biblioteke: znakovni nizovi (stringovi), kontejneri, iteratori, algoritmi. Kontejneri: sekvencijalni (vektor, stek (stog), lista, red), asocijativni-uređeni i asocijativni-heširani (skup, mapa, multi-skup, multi-mapa). Iteratori: ulazni, izlazni, jednosmerni u napre i u nazad, bidirekcioni, sa direktnim pristupom. Algoritmi: za pretraživanje, izmenu, uređivanje, operacije sa hipom (heap).</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa naprednim konceptima objektno-orijentisanog pristupa upotrebom programskog jezika Ce++ i razvojem programa istovremenom upotrebom više programerskih paradigmi (multi-paradigm programming)</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE1006</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student koji uspešno završi kurs upoznat je sa mogućnostima programskog jezika Ce++; ume da efikasno koristi elemente standardne biblioteke; shvata osnovne principe na kojima je objektno orijentisan jezik razvijen; upoznat je sa prednostima i nedostacima jezika i ume da prepozna situacije u kojima je primereno koristiti jezik Ce++; svestan je na koji način jezik podržava različite pristupe programiranju i prepoznaje prednosti i nedostatke svakog od podržanih pristupa;</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i teorijskog dela ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 20.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Objektno orijentisano programiranje 2</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE239M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE239M">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvod u programski jezik JavaScript/ Prototipsko objektno-orjentisano programiranje u jeziku JavaScript/ First-class funkcije i closure u programskom jeziku JavaScript/ Modularizacija JavaScript aplikacija/ Paterni nasleđivanja u programskom jeziku JavaScript (pseudoklasično, diferencijalno i funkcionalno)/ Dijalkti programskog jezika JavaScript/ Jezici izvedeni iz programskog jezika JavaScript i transpajliranje koda/ Arhitekture klijentskih aplikacija/ Veb komponente/ Analiza radnih okvira za razvoj klijentskih aplikacija/ Pomoćni alati za razvoj klijentskih aplikacija/ JavaScript kao jezik za razvoj sloja poslovne logike.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Savladavanje koncepata tehnoloških platformi i radnih okvira za razvoj klijentskih veb aplikacija.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE239M</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje koncepata programskog jezika JavaScript. Poznavanje arhitekture klijentskih veb aplikacija. Znanje razvoja klijentskih veb aplikacija uz korišćenje odgovarajućih radnih okvira i pratećih alata.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 17.08.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inženjerstvo klijentskog sloja</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE239N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE239N">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arhitekture serverskih strana aplikacije. Položaj različitih tipova baza podataka u ovakvim arhitekturama. Tehnologije za razmenu poruka u distribuiranim sistemima. Različite paradigme i implementacije tehnologija u oblaku. Korišćenje i implementacija tehnologija za upravljanje aplikacionih kontejnera,  Serverless computing, Function as a service (FaaS) , Platform as a service (PaaS) . </untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa tehnologijama i principima za implementaciju serverskog segmenta aplikacija.
+</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE239N</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studenti će nakon uspešno završenog kursa biti u mogućnosti da implementiraju najrazličitije moderne kompleksne arhitekture serverskog dela aplikacije. Akcenat će biti stavljen na rešavanje poznatih problema u distribuiranim sistemima upotrebom modernih programskih okvira i biblioteka.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oblici izvođenja nastave su: Predavanja, računarske vežbe, izrada domaćih zadataka i konsultacije. Na predavanjima se korišćenjem potrebnih didaktičkih sredstava, izlažu sadržaji predmeta i stimuliše se aktivno učešće studenata postavljanjem pitanja. Praktični deo gradiva studenti savladavaju na računarskim vežbama kroz obavezne zadatke koje rešavaju uz pomoć izvođača nastave ili samostalno i kroz samostalnu izradu obaveznih domaćih zadataka. Student je obavezan da demonstrira samostalnost u rešavanju zadataka, odnosno da demonstrira razumevanje rešenja.
+</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 25.07.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inženjerstvo serverskog sloja</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE240N -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SE240N">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pregled mobilnog računarstva. Hardver mobilnih uređaja. Komunikacioni protokoli za mobilne uređaje. Programski jezici i operativni sistemi za mobilne uređaje. Korisnički interfejs u mobilnim uređajima. Multimedija u mobilnim uređajima. Grafika. Mrežni servisi. Servisi bazirani na lokaciji. Rad sa bazama podataka. Bezbednost u mobilnim uređajima.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sticanje opštih znanja i posebnih veština za razumevanje koncepata mobilnog računarstva. Ovladavanje tehnologijama i alatima za razvoj softverskih rešenja za mobilne računarske uređaje i sisteme.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SE240N</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje tehnologija za programiranje mobilnih aplikacija. Student je kompententan da razume koncepte mobilnog računarstva i da razvija softverska rešenja za mobilne računarske sisteme.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 23.07.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobilne aplikacije</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEAU01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEAU01">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pojam optimizacije. Postavka optimizacionog problema. Jednodimenziona
+optimizacija. Potrebni i dovoljni uslovi optimalnosti u skalarnom slučaju. Numerička
+optimizacija funkcija jedne promenljive. Jednodimenzioni algoritmi pretrage.
+Višedimnziona optimizacija bez ograničenja. Metod ograničene varijacije. Metod
+Lagranževih množitelja. Numerički algoritmi višedimenzione optimizacije bez ograničenja:
+gradijentni algoritam, Njutnovi i kvazi-Njutnovi algoritmi. Nealder-Mead algoritam.
+Višedimenziona optimizacija sa ograničenjima. Elementi konveksnog programiranja.
+Kun-Takerovi uslovi. Numeričke metode višedimenzione optimizacije sa ograničenjima.
+Linearno programiranje. Kvadratno programiranje. Osnovni principi globalne optimizacije.
+Evolutivni i genetski evolutivni algoritmi. Optimizacija rojem čestica. Osnovni principi
+rada savremnih globalnih algoritama: ACO (Ant Colony Optimization), BFO (Bacteria
+Foragging Optimization), ...</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim principima nelinearne optimizacije (nelinearnog programiranja) i osnovnim principima evolutivnih algoritama.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEAU01</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stečena znanja mogu se koristiti u rešavanju konkretnih inženjerski problema, a takođe predstavljaju osnovu za dalje praćenje stručnih predmeta.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatika i upravljanje sistemima</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Numeričko-računske vežbe; Računarske vežbe Laboratorijske vežbe. Konsultacije. </untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 21.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nelinearno programiranje i evolutivni algoritmi</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN006">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovne tehnologije za izradu veb sadržaja: HTML(5), CSS(3) . 
+Osnove HTTP protokola. Multimedijalni tipovi podataka na vebu. 
+Preporuke za dizajn stranica i sajta.  
+Razvoj veb stranica sa akcentom na njihovu upotrebljivost i korisničko iskustvo UX.
+Upotreba JavaScripta za povećanje interaktivnosti stranica.
+Prilagodljivosti saržaja različitim izlaznim uređajima (responsive design). 
+Tehnike za povećanje dostupnosti sadržaja za osobe sa posebnim potrebama.
+Upoznavanje sa sistemima za upravljanje sadržajem veb sajta (CMS).</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za rukovanje tehnologijama izrade web sadržaja i upoznavanje sa principima web dizajna.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEN006</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studenti su osposobljeni za samostalni rad u domenu formiranja složenih web sadržaja.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Konsultacije; računarske vežbe; predavanja.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 24.07.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web dizajn</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN01">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kriptografija: pregled osnovnih koncepata, kriptografski protokoli, algoritmi, digitalni potpisi, digitalni sertifikati. Simetrični i asimetrični kriptografski algoritmi, heš funkcije, razmena ključeva. Kriptografski standardi. PKI infrastruktura: upravljanje ključevima, uspostavljanje PKI infrastrukture, sertifikaciona tela, hijerarhija sertifiakcionih tela. Zaštita XML dokumenata: digitalni potpisi, šifrovanje, bezbednost web servisa. Tehnologija smart kartica: organizacija, način rada, standardi, korišćenje. Primena bezbednosnih koncepata na nivou operativnih sistema, baza podataka i računarskih mreža. Provera identiteta: jednofaktorska autentifikacija, dvofaktorska autentifikacija, lozinke, challenge-response princip, napadi, Kerberos, HTTP autentifikacija. Kontrola pristupa: koncepti, elementi, politika, mehanizmi i modeli kontrole pristupa. Modelovanje pretnji.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za primenu metoda i tehnika za zaštitu podataka.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEN01</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje metoda i tehnologija za zaštitu podataka. Student je kompententan da koristi kriptografske metode i tehnologije, realizuje softver za zaštitu podataka u sistemima elektronskog poslovanja, projektuje i implementira mehanizme za proveru identiteta i kontrolu pristupa.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa laboratorijskih vežbi i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 25.07.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Informaciona bezbednost</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN032 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN032">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijsko-metodološki</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovni pojmovi vezani za podatke, informacije i znanje. Formalna specifikacija strukture podataka i njeno preslikavanje na elemente perzistentnog sloja složenih softverskih proizvoda.
+Platformski nezavisni i platformski zavisni aspekti rukovanja podacima, informacijama i znanjem.
+Platformski nezavisan model univerzalnog informacionog resursa, opis i preslikavanje.
+Organizacija podataka - perzistentni sloj zavisan od operativnog sistema. Arhitektura sistema datoteka, tipovi datoteka i operacije nad datotekama i unutar datoteka različite organizacije. 
+Modelovanje informacionih resursa. Razvoj arhitekture perzistentnog sloja složenih softverskih proizvoda. Konceptualno, logičko i fizičko modelovanje podataka. Standardizacija operacija nad informacionim resursima. Standardizacija izveštajnog podsistema nad univerzalnim perzistentnim slojem.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim i naprednim znanjima i veštinama vezanim za  upravljanja informacijama u kontekstu složenih softverskih proizvoda.
+Integrisanje skladišta podataka na masovnoj memoriji sa strukturom podataka u operativnoj mremoriji.
+Dubinsko razumevanje platformski nezavisnih i platformski zavisnih aspekata informacionih resursa.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEN032</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student je u stanju da: specificira, modeluje i implementira mehanizme za rukovanje informacionim resursima u sklopu arhitekture složenih softverskih proizvoda.
+Osposobljen je za upotrebu različitih tipova skladišta podataka, organizacije podataka i struktura podataka pri implementaciji komponenti za rukovanja informacijama u sklopu arhitekture softverskog proizvoda.
+U stanju su da formulišu i implementiraju standardne operacije (dodavanje, izmenu, brisanje i pretrage) nezavisno od prirode i načina implementacije sloja za trajno čuvanje (skladištenje) informacija.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Projekat. U sklopu predmeta studenti podeljeni u timove od po po četiri člana  realizuju projekat interaktivne aplikacije koja omogučava vizualizaciju i implementaciju osnovnih operacija nad spoljašnjim skladištem podataka predstavljenim meta-opisom. 
+Poseban akcenat je stavljan na plastformski nezavisnu implementaciju izveštajnog podsistema koji koristi model specificiranog sloja za trajno čuvanje (skladišta) informacionih resursa.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 14.07.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upravljanje informacijama</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN034 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEN034">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pojam računarstva u oblaku. 
+Vrste servisa:
+Infrastruktura kao servis (IaaS) i virtualizacija, 
+Platforma kao servis (PaaS), 
+Softver kao servis (SaaS), 
+Funkcije kao servis (FaaS), 
+Poslovni procesi kao servis (BPaaS)
+Popularne platforme za računarstvo u oblaku.
+Šabloni pri razvoju sistema za računarstvo u oblaku.
+Trendovi razvoja multicloud paltformi i Fog comupting.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upoznavanje studenata sa konceptima računarstva u oblaku. Razumevanja različitih vrsta servisa računarstva u oblaku (IaaS, PaaS, SaaS, FaaS, BPaaS...) kao i najpopularnijim platformama za računarstvo u oblaku (Amazon Web Services, Google Cloud Platform, Azure...). Upoznavanje sa šablonima za implementaciju rešenja u oblaku. Multicloud koncepti i Fog computing.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEN034</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa student je u stanju da primenjuje koncepte i resurse koji su dostupni putem računarstva uoblaku, kao i da projektuje softverske sisteme i aplikacije koji koriste platforme računarstva u oblaku.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Predmetni projekat. Ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa predmetnopg projekta i usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.08.2017..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Računarstvo u oblaku</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SES103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SES103">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akademsko-opšteobrazovni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Struktura i sadržaj seminarskog, diplomskog, master i naučnog rada; Elementi pravopisa i gramatike srpskog i engleskog jezika; Vizuelna komunikacija (izgled celokupnog dokumenta, način prezentacije slika i tabela u radu); Prezentovanje; Rad u alatima za oblikovanje teksta (MS Word i LaTeX); Poslovna korespondencija (pisanje rezimea i izveštaja; komunikacija u timu; komunikacija putem različitih kanala: elektronska pošta, telefon, telekonferencije); Elementi naučnog rada (pretraga naučne literature, proces publikacije rada, recenziranje i odgovor na recenzije, citiranje stručne i naučne literature, vrednovanje časopisa i konferencija) </untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za govornu i pisanu profesionalnu komunikaciju. Tokom kursa, studenti treba da ovladaju &quot;mekim&quot; veštinama za efikasnu i uspešnu poslovnu komunikaciju. Studenti takođe treba da steknu veštine akademskog pisanja i prezentovanja. Kroz kurs studenti treba da steknu i veštinu pretrage i pozivanja na adekvatnu naučnu i stručnu literaturu u cilju potkrepljivanja poruke koju žele da prenesu.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SES103</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakon uspešno završenog kursa, student je stekao veštinu pisane i oralne komunikacije sadržaja relevantnih za inženjersku struku na srpskom i engleskom jeziku. Student je stekao veštinu da se jasno i koncizno izražava, kao i da poruku koju želi da prenese potkrepi adekvatnom naučnom i stručnom literaturom. Student je stekao veštine akademskog pisanja i prezentovanja, kao i smernice za pisanje diplomskog rada. Student je takođe stekao veštine profesionalne komunikacije putem različitih kanala (elektronska pošta, telefon,...).</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Na predavanjima, studenti dobijaju smernice o načinu pisanja i usmenog izlaganja sadržaja. Glavnu okosnicu predmeta čini seminarski rad koji student treba da napiše i usmeno izloži. Kao dodatnu vežbu, student dobija odabrani seminarski rad svojih kolega koji je dužan da recenzira. Takođe, student treba da napiše i svoj rezime. Ocena praktičnog dela se formira na osnovu kvaliteta napisanog seminarskog rada, održane prezentacije, recenzije i rezimea. Završni deo ispita studenti polažu usmeno.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 10.11.2012..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisana i govorna komunikacija u tehnici</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SES40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SES40">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teorijska nastava: Osnovne definicije i istorijat razvoja softverskih obrazaca. Kategorije softverskih obrazaca; Dizajn obrasci; Arhitektonski obrasci. Pregled popularnih obrazaca. Prednosti i mane. Katalozi softverskih obrazaca. Antiobrasci (Anti-Patterns);osnovne osobine; pregled karakterističnih antiobrazaca. Komponentno bazirani razvoj; osnovne definicije; istorijat. Pregled postojećih komponentnih modela. Prednosti i mane. Modelovanje arhitekture aplikacija baziranih na komponentama. Tržišta softverskih komponenti. Praktična nastava: obuka za korišćenje modernih alata za izradu softvera baziranog na komponentama; implementacija projektnog zadatka upotrebom savremenih alata i okvira za razvoj baziran na komponentama uz akcenat na pravilnu primenu softverskih obrazaca.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim teorijskim znanjima, tehnikama, alatima i preporučenom praksom iz oblasti softverskih obrazaca (Software Patterns) i razvoja softvera baziranog na komponentama (Component-Based Development – CBD). Osposobljavanje studenata za uočavanje obrazaca u kontekstu razvoja složenih softverskih proizvoda kao i definisanje arhitekture sistema bazirane na softverskim komponentama.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SES40</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Po okončanju predmeta studenti su sposobni da, u razvoju složenih softverskih aplikacija, uoče i primene softverske obrasce kao i da razumeju prednosti i mane primene preporučenih softverskih obrazaca. Takođe su osposobljeni da za konkretan zadatak izaberu i primene najpogodniju platformu za komponentno baziran razvoj, modeluju arhitekturu, dekomponuju sistem na potreban broj softverskih komponenti, definišu interfejse komponenti i izvrše implementaciju sistema.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Rešavanje projektnog zadatka kroz rad u okviru projektnih timova. Poslednjih nedelja semestra organizuju se javne prezentacije projektnih zadataka najuspešnijih timova i diskutuju se postignuti rezultati. Odbrana projekta je usmena. Završni ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa odbrane projektnog zadatka i završnog usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2007..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Softverski obrasci i komponente</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEZR01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEZR01">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formira se pojedinačno u skladu sa potrebama i oblašću koja je obuhvaćena zadatom temom završnog rada. Student proučava stručnu literaturu, stručne i diplomske radove studenata koji se bave sličnom tematikom, vrši analize u cilju iznalaženja rešenja konkretnog zadatka koji je definisan zadatkom završnog rada.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primena osnovnih, teorijsko metodoloških, naučno-stručnih i stručno-aplikativnih znanja i metoda na rešavanju konkretnih problema u okviru izabrane oblasti. U okviru ovog dela završnog rada student izučava problem, njegovu strukturu i složenost i na osnovu sprovedenih analiza izvodi zaključke o mogućim načinima njegovog rešavanja. Proučavajući literaturu student se upoznaje sa metodama koje su namenjene za rešavanje sličnih zadataka i inženjerskom praksom u njihovom rešavanju. Cilj aktivnosti studenata u okviru ovog dela izrade diplomskog rada ogleda se u sticanju neophodnih iskustava kroz rešavanja kompleksnih problema i zadataka i prepoznavanje mogućnosti za primenu prethodno stečenih znanja u praksi.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEZR01</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata da samostalno primenjuju prethodno stečena znanja iz različitih oblasti koje su prethodno izučavali, radi sagledavanja strukture zadatog problema i njegovoj sistemkoj analizi u cilju izvođenju zaključaka o mogućim pravcima njegovog rešavanja. Kroz samostalno koričćenje literature, studenti proširuju znanja iz izabrane oblasti i proučavaju različitih metoda i radove koji se odnose na sličnu problematiku. Na taj način, kod studenata se razvija sposobnost da sprovode analize i identifikuju probleme u okviru zadate teme. Praktičnom primenom stečenih znanja iz različih oblasti kod stuedenata se razvija sposobnost da sagledaju mesto i ulogu inženjera u izabranoj oblasti, potrebu za saradnjom sa drugim strukama i timskim radom.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentor završnog rada sastavlja zadatak rada i dostavlja ga studentu. Student je obavezan da završni rad izradi u okviru zadate teme koja je definisana zadatkom završnog rada. Tokom izrade završnog rada, mentor može davati dodatna uputstva studentu, upućivati na odrećenu literaturu i dodatno ga usmeravati u cilju izrade kvalitetnog završnog rada. U okviru teorijskog dela završnog rada student obavlja konsultacije sa mentorom, a po potrebi i sa drugim nastavnicima koji se bave problematikom iz oblasti teme završnog rada. U okviru zadate teme, student po potrebi vrši i određena merenja, ispitivanja, brojanja, ankete i druga istraživanja, ako je to predviđeno zadatkom završnog rada.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Završni rad - istraživački rad</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEZR02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SEZR02">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formira se pojedinačno u skladu sa potrebama i oblašću koja je obuhvaćena zadatom temom završnog rada. Student u dogovoru sa mentorom sačinjava završni rad u pismenoj formi u skladu sa predviđenim standardima Fakulteta tehničkih nauka. Student priprema i brani pismeni završni rad javno u dogovoru sa mentorom i u skladu sa predviđenim standardima. Student proučava stručnu literaturu, stručne i diplomske radove studenata koji se bave sličnom tematikom, vrši analize u cilju iznalaženja rešenja konkretnog zadatka koji je definisan zadatkom završnog rada.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cilj izrade i odbrane završnog rada je da student pokaže da poseduje zadovoljavajuću sposobnost primene teorijskih i praktičnih znanja u praks</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SEZR02</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Izradom i odbranom završnog rada studenti koji su završili studije treba da budu sposobni da rešavaju realne probleme iz prakse kao i da nastave školovanje ukoliko se za to opredele. Kompetencije uključuju, pre svega, razvoj sposobnosti kritičnog mišljenja, sposobnosti analize problema, sinteze rešenja, predviđanje ponašanja odabranog rešenja sa jasnom predstavom šta su dobre a šta loše strane odabranog rešenja. Svršeni studenti imaju i sposobnost rešavanja konkretnih problema uz upotrebu naučnih metoda i postupaka. Posebno je važna sposobnost povezivanja osnovnih znanja iz različitih oblasti i njihova primena. Svršeni studenti su osposobljeni za intenzivno korišćenje informaciono-komunikacionih tehnologija.
+Svršeni studenti ovog nivoa studija poseduju kompetenciju za primenu znanja u praksi i praćenje i primenu novina u struci, kao i za saradnju sa lokalnim socijalnim i međunarodnim okruženjem.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentor za izradu i odbranu završnog rada bira jedan od ponuđenih modula (isti modul kao i za teorijske osnove) iz kojeg će student da radi završni rad i formuliše temu sa zadacima za izradu završnog rada. Kandidat u konsultacijama sa mentorom i saradnikom samostalno radi na problemu koji mu je zadat. Nakon izrade rada i saglasnosti mentora da je uspešno urađen rad, kandidat brani rad pred komisijom koja se sastoji od najmanje tri člana.
+Tokom izrade završnog rada, mentor može davati dodatna uputstva studentu, upućivati na odrećenu literaturu i dodatno ga usmeravati u cilju izrade kvalitetnog diplomskog rada. U okviru teorijskog dela završnog rada student obavlja konsultacije sa mentorom, a po potrebi i sa drugim nastavnicima koji se bave problematikom iz oblasti teme završnog rada.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Završni rad - izrada i odbrana</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SWE242 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-SWE242">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osnovni model softverskog sistema. Odnos specifikacije zahteva, specifikacije dizajna i implementacije softverskih sistema. Osnovi inženjerstva zahteva, proces, iskazivanje, analiza, specifikacija, verifikacija i validacija zahteva. Izrada formalnog dokumenta - specifikacija zahteva. Osnovi dizajna softvera, statičko i dinamičko modelovanje. Osnove UML, struktura, organizacija i meta-model. UML dijagrami: dijagram slučajeva korišćenja, dijagrami klasa, dijagrami objekata, dijagrami saradnje, dijagrami sekvence, dijagrami aktivnosti, dijagrami stanja. Napredno UML modelovanje: interfejsi, paketi i modelovanje fizičke arhitekture.Arhitektonski i dizajn šabloni i njihova primena u modelovanju arhitekture softverskih sistema.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za efikasno i efektivno modedlovanje i specifikaciju softverskih sistema. Ovladavanje znanjima i veštinama neophodnim za analizu i specifikaciju softverskih zahteva. Ovladavanje osnovama model baziranog dizajna. Ovladavanje UML-specifikacijama.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17 - SWE242</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Po okončanju predmeta studenti su osposobljeni za: analizu složenih sistema, specifikaciju zahteva prema sistemu i softveru i primenu UML-formalizama prilikom modelovanju statičkog i dinamičkog ponašanja sistema i softvera. U sklopu predmeta studenti ovladavaju raspoloživim, UML baziranim, komercijalnim alatima za modelovanje softvera i formalnu specifikaciju statičkog i dinamičkog ponašanja sistema i softvera i modelovanje arhitekture softvera.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U sklopu teorijskog dela nastavnog procesa, paralelno sa uvođenjem znanja i veština vezanih za specifikaciju i modelovanje sistema i softvera, studenti formiraju projektne timove od 3 do 5 članova i u timskom radu uvežbavaju usvojeno na dva tipična projekta složenih sistema izabrana iz realnog okruženja. Prvi projekat razmatra sistem koji je u osnovi orijentisan ka podacima i manipulacijama sa podacima i modeluje se u tutorskom režimu rada. Drugi projekat razmatra događajima upravljani sistem i njegovo modelovanje je prepušteno projektnim timovima.U sklopu predavanja timovi saopštavaju izveštaje o progresu na projektu.U sklopu praktičnog dela kursa studenti brane svoja projektna rešenja.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.09.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifikacija i modeliranje softvera</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SE0035 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SE0035">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pojam i uloga testiranja u procesu razvoja softvera. Tipovi testiranja. Statičko testiranje. Dinamično testiranje. Tehnike testiranja &quot;bele kutije&quot;. Tehnike testiranja &quot;crne kutije&quot;. Korišćenje test dvojnika. Alati, biblioteke i radni okviri za testiranje. Testiranje veb aplikacija. Testiranje serverskog dela aplikacije. Testiranje klijentskog dela aplikacije. Testiranje integrisanog sistema.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobiti studente za primenu preporučene prakse, metoda, tehnika i alata u domenu konstrukcije i testiranja softvera.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19 - SE0035</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poznavanje principa, tehnika i alata za konstruisanje i testiranje softvera. Student je kompententan da vrši planiranje i konstruisanje softvera. Sposoban je da izvrši automatizaciju procesa testiranja, testira jedinice ili ceo softver. Moći će da izvrši analizu i izbor alata za testiranje, kreiranje test-slučajeva i da sprovede efikasno testiranje softvera.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predavanja; Računarske vežbe; Konsultacije. Rešavanje projektnog zadatka kroz rad u okviru projektnih timova. Poslednjih nedelja semestra organizuju se javne prezentacije projektnih zadataka timova i diskutuju se postignuti rezultati. Odbrana projekta je usmena. Završni ispit je usmeni. Ocena ispita se formira na osnovu uspeha sa odbrane projektnog zadatka i završnog usmenog ispita.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2019..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testiranje softvera</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SE0036 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SE0036">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naučno-stručni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koncepti, ciljevi, pristupi, okruženja i oblasti primene računarske inteligencije. Slepe i heurističke pretrage kod problema sa i bez protivnika. Modelovanje stohastičkih okruženja (Markovljevi Procesi Odlučivanja). Obučavanje inteligentnih agenata pomoću učenja uslovljavanjem. Osnove mašinskog učenja: tipovi algoritama i učenja (nadgledano, ne-nadgledano, polu-nagledano itd.), osnove klasterovanja i klasifikacije. Uvod u veštačke neuronske mreže (perceptron i jednostavne potpuno povezane mreže). Uvod u duboko učenje: konvolutivne neuronske mreže, rekurentne neuronske mreže, i principi obučavanja dubokih neuronskih mreža. Uvod u duboko učenje uslovljavanjem. Uvod u programski jezik Prolog. Uvod u genetske algoritme.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovladavanje osnovnim principima i tehnikama računarske (veštačke) inteligencije.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19 - SE0036</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Razumevanje osnovnih principa i tehnika računarske inteligencije i sposobnost njihove primene u rešavanju različitih vrsta problema.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oblici izvođenja nastave su: predavanja, računarske vežbe, izrada domaćih zadataka, i konsultacije.Na predavanjima se, korišćenjem potrebnih didaktičkih sredstava, izlažu sadržaji predmeta i stimuliše se aktivno učešće studenata postavljanjem pitanja. Praktični deo gradiva studenti savladavaju na računarskim vežbama kroz zadatke koje rešavaju uz pomoć asistenta ili samostalno i kroz samostalnu izradu domaćih zadataka.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 30.09.2005..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Računarska inteligencija</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SEOSP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#19-SEOSP">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <schema:part_of rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije"/>
+        <untitled-ontology-15:hasCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručno-aplikativni</untitled-ontology-15:hasCategory>
+        <untitled-ontology-15:hasContent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formira se za svakog kandidata posebno, u dogovoru sa rukovodstvom preduzeća ili institucije u kojima se obavlja stručna praksa, a u skladu sa potrebama struke za koju se student osposobljava.</untitled-ontology-15:hasContent>
+        <untitled-ontology-15:hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-15:hasESPB>
+        <untitled-ontology-15:hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sticanje neposrednih saznanja o funkcionisanju i organizaciji preduzeća i institucija koje se bave poslovima u okviru struke za koju se student osposobljava i mogućnostima primene prethodno stečenih znanja u praksi.</untitled-ontology-15:hasGoal>
+        <untitled-ontology-15:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19 - SEOSP</untitled-ontology-15:hasID>
+        <untitled-ontology-15:hasLevelOfStudy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osnovne</untitled-ontology-15:hasLevelOfStudy>
+        <untitled-ontology-15:hasOutcome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osposobljavanje studenata za primenu prethodno stečenih teorijskih i stručnih znanja za rešavanje konkretnih praktičnih inženjerskih problema u okviru izabranog preduzeća ili insititucije. Upoznavanje studenata sa delatnostima izabranog preduzeća ili institucije, načinom poslovanja, upravljanjem i mestom i ulogom inženjera u njihovim organizacionim strukturama.</untitled-ontology-15:hasOutcome>
+        <untitled-ontology-15:hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primenjene računarske nauke i informatika</untitled-ontology-15:hasScienceField>
+        <untitled-ontology-15:hasTeachingMethodology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Konsultacije i pisanje dnevnika stručne prakse u kome student opisuje aktivnosti i poslove koje je obavljao za vreme stručneprakse.</untitled-ontology-15:hasTeachingMethodology>
+        <untitled-ontology-15:isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne</untitled-ontology-15:isMultiDisciplinary>
+        <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program se primenjuje od 01.10.2019..</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stručna praksa - projekat</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Television,GlobalizationAndCulturalIdentities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Television,GlobalizationAndCulturalIdentities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#17-E106"/>
+        <untitled-ontology-15:hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open University Press </untitled-ontology-15:hasPublisher>
+        <untitled-ontology-15:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</untitled-ontology-15:hasYear>
+        <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Barker</hasAuthor>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Television, Globalization and Cultural Identities</schema:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

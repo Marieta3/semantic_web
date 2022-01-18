@@ -1,0 +1,9 @@
+SELECT * FROM <http://localhost:3030/Onto17/data/papersMetadata>
+WHERE {
+     ?programme <http://purl.org/vocab/aiiso/schema#name> "Softversko inženjerstvo i informacione tehnologije".
+     ?programme <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCourse> ?course.
+     ?course <http://purl.org/vocab/aiiso/schema#name> ?course_name.
+     ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isMultiDisciplinary> ?isMultiDisciplinary.
+     ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isMultiDisciplinary> true
+
+}

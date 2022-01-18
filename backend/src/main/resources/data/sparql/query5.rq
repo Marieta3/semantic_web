@@ -1,0 +1,10 @@
+SELECT ?professor ?name ?title (count(distinct ?course) as ?count) FROM <%s>
+WHERE {
+     ?professor <http://xmlns.com/foaf/0.1/title> ?title.
+     ?professor <http://purl.org/vocab/aiiso/schema#name> ?name.
+     ?professor <http://purl.org/vocab/aiiso/schema#teaches> ?course.
+     FILTER (regex(str(?title), "Profesor", "i"))
+
+}
+GROUP BY ?professor ?name ?title
+having (count(?course) > 1)

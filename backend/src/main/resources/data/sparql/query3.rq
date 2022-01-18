@@ -1,0 +1,14 @@
+PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
+PREFIX onto17: <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#>
+
+SELECT * FROM <%s>
+WHERE {
+     ?student aiiso:name ?name.
+     ?student onto17:hasTestResult ?testResult.
+     ?testResult onto17:hasPoints ?points.
+     ?student onto17:hasCourse ?course.
+     ?course aiiso:name "Numerički algoritmi i numerički softver".
+     ?course aiiso:name ?course_name.
+     FILTER (?points < 81)
+}
+ORDER BY (?points)

@@ -1,0 +1,17 @@
+PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
+PREFIX onto17: <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?text FROM <%s>
+WHERE {
+     ?test foaf:title "Mendix Rapid40".
+     ?test foaf:title ?title.
+     #?test rdf:type onto17:Test.
+     ?test onto17:hasPart ?part.
+     ?part onto17:hasSection ?section.
+     ?section onto17:hasItem ?item.
+     ?item onto17:text ?text.
+     ?item onto17:choice ?choice.
+}
+group by ?text
+having (count(?choice) = 2)

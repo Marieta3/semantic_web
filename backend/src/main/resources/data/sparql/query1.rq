@@ -1,0 +1,8 @@
+SELECT * FROM <%s>
+WHERE {
+	?course <http://purl.org/vocab/aiiso/schema#name> ?name.
+    ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCategory> ?category .
+    ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasESPB> ?espb .
+    ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature> ?literature .
+}
+ORDER BY (?espb)

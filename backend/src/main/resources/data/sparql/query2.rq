@@ -1,0 +1,9 @@
+SELECT * FROM <%s>
+WHERE {
+     ?course <http://purl.org/vocab/aiiso/schema#name> ?name.
+     ?literature <http://purl.org/vocab/aiiso/schema#name> ?name_lit.
+     ?literature <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasYear> ?year.
+	 ?course <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature> ?literature .
+  FILTER (?year > 2014)
+}
+ORDER BY ?year
