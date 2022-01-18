@@ -1,0 +1,6 @@
+SELECT * FROM <http://localhost:3030/Onto17/data/papersMetadata>
+WHERE {
+     ?professor <http://xmlns.com/foaf/0.1/title> ?title.
+     ?professor <http://purl.org/vocab/aiiso/schema#name> ?name.
+     FILTER (regex(str(?title), "Profesor", "i"))
+}

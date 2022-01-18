@@ -1,0 +1,26 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:title xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Paper 1 example</pred:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:language xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">serbian</pred:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:authors xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Marieta Rakos</pred:authors>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:authors xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">Arpad Varga</pred:authors>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:keywords xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"> xml</pred:keywords>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:keywords xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">web</pred:keywords>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:keywords xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">servis</pred:keywords>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/ArpadVS/XML_tim14_2019-Publication">
+    <pred:recievedDate xmlns:pred="https://github.com/ArpadVS/XML_tim14_2019-Publication/predicate/" rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">19-06-2020</pred:recievedDate>
+  </rdf:Description>
+</rdf:RDF>

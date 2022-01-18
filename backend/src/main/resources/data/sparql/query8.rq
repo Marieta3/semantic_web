@@ -1,0 +1,14 @@
+PREFIX aiiso: <http://purl.org/vocab/aiiso/schema#>
+PREFIX onto17: <http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT * FROM <http://localhost:3030/Onto17/data/papersMetadata>
+WHERE {
+     ?student onto17:hasCourse ?course.
+     ?student rdf:type onto17:Student.
+     ?student aiiso:name ?name.
+     ?course onto17:isAssistedBy ?assistant.
+     ?assistant aiiso:name ?assistant_name.
+     ?course aiiso:name ?course_name.
+}
+ORDER BY (?course_name)

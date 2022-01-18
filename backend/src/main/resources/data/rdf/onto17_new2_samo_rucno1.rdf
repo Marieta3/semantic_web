@@ -1,0 +1,1137 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17">
+        <owl:imports rdf:resource="http://purl.org/vocab/aiiso/schema#"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/aiiso/schema#description">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/aiiso/schema#name">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/surname -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/surname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#part_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/aiiso/schema#teaches">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#doneByStudent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#doneByStudent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTestResult"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCourse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfProgramme"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasEntity"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTestResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTestResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfProgramme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfProgramme">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/aiiso/schema#description"/>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/aiiso/schema#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#choice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#choice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#correct_response -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#correct_response">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#endTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCategory">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasContent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasContent">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasESPB -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasESPB">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasGoal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasGoal">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasID">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLevelOfStudy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLevelOfStudy">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasOutcome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasOutcome">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPoints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPublisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPublisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasScienceField -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasScienceField">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTeachingMethodology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTeachingMethodology">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isCorrect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isCorrect">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isMultiDisciplinary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isMultiDisciplinary">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#outcome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#outcome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#startTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Course -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Course">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLiterature"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTest"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isAssistedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#isTaughtBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/aiiso/schema#Programme -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/aiiso/schema#Programme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Assistant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#assists"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasKnowlegeSpace"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfSection"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#choice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#correct_response"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#outcome"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#text"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasLink"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfDomain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasDomainProblem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfKnowledgeSpace"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasSection"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfTest"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasItem"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfPart"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasCourse"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTestResult"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/vocab/aiiso/schema#teaches"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#partOfCourse"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#doneByStudent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#hasTest"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#SoftverskoInženjerstvoIInformacioneTehnologije">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+        <hasCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Softversko inženjerstvo i informacione tehnologije</schema:name>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Softversko Inzenjerstvo i Informacione Tehnologije</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1">
+        <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+        <hasLiterature rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#literature1"/>
+        <hasCategory>Cat</hasCategory>
+        <hasContent>Content</hasContent>
+        <hasESPB rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</hasESPB>
+        <hasGoal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goal</hasGoal>
+        <hasID>123OPA</hasID>
+        <hasLevelOfStudy>Level of Study</hasLevelOfStudy>
+        <hasOutcome>Outcome</hasOutcome>
+        <hasScienceField rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blabla</hasScienceField>
+        <hasTeachingMethodology>Teaching methodology</hasTeachingMethodology>
+        <isMultiDisciplinary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isMultiDisciplinary>
+        <schema:description>Basic Info</schema:description>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Course1</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domain1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domain1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Domain"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#DomainProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <partOfSection rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section1"/>
+        <choice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drugi</choice>
+        <choice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prvi</choice>
+        <correct_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prvi</correct_response>
+        <outcome rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</outcome>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koji odgovor je tacan?</text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Item"/>
+        <partOfSection rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section1"/>
+        <choice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dunav</choice>
+        <choice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nil</choice>
+        <choice rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sava</choice>
+        <correct_response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dunav</correct_response>
+        <outcome rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</outcome>
+        <text rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Koja reka?</text>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ks1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#ks1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#KnowledgeSpace"/>
+        <hasLink rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#link1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Link"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem1"/>
+        <hasDomainProblem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#domainProblem2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#literature1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#literature1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Literature"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <schema:name>Literatura 1</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Part"/>
+        <hasSection rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+        <hasItem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item1"/>
+        <hasItem rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#item2"/>
+        <partOfPart rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#section2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Section"/>
+        <partOfPart rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Student"/>
+        <hasCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <hasTestResult rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#tesrResult1"/>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stuent1</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#teacher1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#teacher1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Teacher"/>
+        <schema:teaches rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <foaf:title>vanr prof</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Profa1</schema:name>
+        <foaf:surname>Profic</foaf:surname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#tesrResult1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#tesrResult1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#TestResult"/>
+        <doneByStudent rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#student1"/>
+        <hasPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#int">89</hasPoints>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part1"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prvi test</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prvi test</schema:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#Test"/>
+        <hasPart rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#part2"/>
+        <partOfCourse rdf:resource="http://www.semanticweb.org/marieta/ontologies/2021/11/untitled-ontology-17#course1"/>
+        <foaf:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drugi test</foaf:title>
+        <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drugi test</schema:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
